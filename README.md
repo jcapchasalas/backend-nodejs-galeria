@@ -14,18 +14,18 @@ Ingrese al PATH `C:\ProjectAngular\galeria-app\backend-nodejs-galeria` donde se 
 INSTALACION DE DEPENDENCIAS O LIBRERIA DE TERCEROS
 ------------------------------------------------------
 
-COMMAND | DESCRIPCION
+COMMAND         | DESCRIPCION
 ----------------|----------------------------
-npm init -y | Crea un archivos `package.json`
-npm install express --save |
-body-parser --save | Esta Libreria toma la informacion del POST y crea un objeto de javascript
-npm install nodemon --save-dev | Reiniciar el servidor automaticamente cada ver que realizamos cambios
-npm install sequelize-cli -g | Herramienta de linea de comandos (crea archivo init)
-npm install sequelize --save | Instalar "sequelize"
-npm install pg pg-hstore --save | Conexion a la Base de datos postgres
-npm install mysql2 --save | Conexion a la Base de datos MySQL
-sequelize init | Ejecutar en la carpeta `server`
-npm install njwt --save | Libreria que crea los token
+|npm init -y | Crea un archivos `package.json`|
+|npm install express --save |
+|body-parser --save | Esta Libreria toma la informacion del POST y crea un objeto de javascript|
+|npm install nodemon --save-dev | Reiniciar el servidor automaticamente cada ver que realizamos cambios |
+|npm install sequelize-cli -g | Herramienta de linea de comandos (crea archivo init)|
+|npm install sequelize --save | Instalar "sequelize"|
+|npm install pg pg-hstore --save | Conexion a la Base de datos postgres|
+|npm install mysql2 --save | Conexion a la Base de datos MySQL|
+|sequelize init | Ejecutar en la carpeta `server`|
+|npm install njwt --save | Libreria que crea los token|
 
 
 
@@ -34,6 +34,50 @@ INSTALL EXTENSIONES EN VISUAL STUDIO  CODE
 ------------------------------------------------------
 COMMAND | DESCRIPCION
 ----------------|----------------------------
+
+
+
+
+COMAND GITHUB
+------------------------------------------------------
+
+git init 
+git add .
+git commit -m "first commit" 
+git remote add origin `[URL]`
+git push -u origin master
+
+
+
+### TAG
+
+git tag | Ver los tag creado
+git tag -d superRelease | Eliminar Tag
+git tag -a v1.0.0 -m "Version 1.0.0" | Crear un tag de forma mas detallada
+git tag -a v0.1.0 345d7de -m "version alfa" | Crear un tag en una version en base a un codigo hash
+git show v1.0.0 | Ver informacion detalla del tag
+
+
+### VIJAR EN EL TIEMPO
+
+|       ADELANTE HACIA ATRAS             |
+| ----------------- | ------------------ |
+| git reset --soft 9aa96f6   | Lo va revertir a un determinado punto en nuestra histi¿oria  |
+| git reset --mixed a88a098  | falta  |
+| git reset --hard a88a098   | falta  |
+
+
+
+|       DE ATRAS HACIA DELANTE           |
+| ----------------- | ------------------ |
+| git reflog  | Lo va revertir a un determinado punto en nuestra histi¿oria  |
+| git reset --hard 8d5cada  | falta  |
+
+
+
+
+
+
 
 
 
