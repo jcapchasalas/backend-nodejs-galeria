@@ -2,10 +2,19 @@
     "development": {
         "username": "postgres",
         "password": "j40nk3n3d71.",
-        "database": "galeria-db",
+        "database": "galeriaDB",
         "host": "127.0.0.1",
         "dialect": "postgres",
-        "operatorsAliases": false
+        "operatorsAliases": {
+            "$and": "Op.and",
+            "$or": "Op.or",
+            "$eq": "Op.eq",
+            "$gt": "Op.gt",
+            "$lt": "Op.lt",
+            "$lte": "Op.lte",
+            "$like": "Op.like"
+        }
+
     },
     "test": {
         "username": "root",
@@ -22,5 +31,7 @@
         "host": "127.0.0.1",
         "dialect": "mysql",
         "operatorsAliases": false
-    }
+    },
+
+    "token_secret": "123BcDe%1298SerT7"
 }

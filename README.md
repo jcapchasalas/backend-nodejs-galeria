@@ -8,7 +8,7 @@ Para reconstruir los módulos de node, es necesario utilizar el  el comando `npm
 
 INICIAR EL SERVIDOR NODEJS
 ------------------------------------------------------
-Ingrese al PATH donde se encuentra el proyecto y ejecute en el cmd `npm start` para iniciar el servidor NodeJs.
+Ingrese al PATH `C:\ProjectAngular\galeria-app\backend-nodejs-galeria` donde se encuentra el proyecto y ejecute en el cmd `npm start` para iniciar el servidor NodeJs.
 
 
 INSTALACION DE DEPENDENCIAS O LIBRERIA DE TERCEROS
@@ -25,7 +25,7 @@ npm install sequelize --save | Instalar "sequelize"
 npm install pg pg-hstore --save | Conexion a la Base de datos postgres
 npm install mysql2 --save | Conexion a la Base de datos MySQL
 sequelize init | Ejecutar en la carpeta `server`
-
+npm install njwt --save | Libreria que crea los token
 
 
 
