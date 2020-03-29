@@ -9,7 +9,7 @@ CREATE DATABASE "galeriaDB"
     CONNECTION LIMIT = -1;
 
 
---TABLA FOTOGRAFICAS
+--CREAR TABLA FOTOGRAFICAS
 CREATE TABLE public.fotografias (
     id serial primary key NOT NULL,
     fotografia character varying(200) NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE public.fotografias (
     "updatedAt" date
 );
 
---TABLA USUARIO
+--CREAR TABLA USUARIO
 CREATE TABLE public.usuarios (
     id serial primary key NOT NULL,
     usuario character varying(200) NOT NULL,

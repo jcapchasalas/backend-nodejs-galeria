@@ -61,7 +61,6 @@ function getAll(req, res) {
         })
         .catch(err => {
             res.status(500).send({ message: "Ocurrió un error al buscar los usuarios." });
-            console.log(err);
         })
 }
 
