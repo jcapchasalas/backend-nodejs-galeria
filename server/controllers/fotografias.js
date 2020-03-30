@@ -61,7 +61,22 @@ function uploadFotografia(req, res) {
         var file_ext = ext_split[1]; //Guardamos la extension
 
         if (file_ext == 'jpg') {
+            var foto = {};
+            foto.imagen = file_name;
 
+            fotografias.findByPk(id)
+                .then(fotografia => {
+                    fotografia.update(foto)
+                        .then(() => {
+                            res.status(200).send({ fotografia });
+                        })
+                        .catch(err => {
+                            res.status(500).send({ message: "ocurrio un error al actualizar la fotografia" + err });
+                        });
+                })
+                .catch(err => {
+                    res.status(500).send({ message: "Ocurrio un error al buscar la fotografia" + err });
+                })
         }
 
     } else {

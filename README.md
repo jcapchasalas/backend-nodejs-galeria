@@ -101,26 +101,36 @@ COMMAND | DESCRIPCION
 git clone `[URL]` | Clonar un repositiorio
 git clone `[URL]` `[nombre]` | Clonar repositorio y colocar nombre propio 
 
-### RAMAS UNIONES CONFLICTOS 
+### RAMAS - UNIONES - CONFLICTOS 
+ITEM|COMMAND | DESCRIPCION
+----|--------|----------------------------
+1   |git branch [Rama-Seccion1-Clase10] | Crear una nueva rama
+2   |git checkout [Rama-Seccion1-Clase10] | Mover de rama
+3   |git checkout -b `[NOMBRE DE LA RAMA]`| forma rapida: crear y moverse (1-2)
+4   |git branch | ver las ramas creadas `marcado en verde es la rama que estamos trabajando`
+5   |git branch -d [Rama-Seccion1-Clase10] | Eliminar una rama
+
+
 COMMAND | DESCRIPCION
 --------|----------------------------
-git branch [Rama-Seccion1-Clase10] | Crear una nueva rama
-git branch | ver las ramas creadas `marcado en verde es la rama que estamos trabajando`
-git checkout [Rama-Seccion1-Clase10] | Mover de rama
+git diff [Rama-Seccion1-Clase10] [master] | Saber la direferencia entre ramas
+
+**UNION ENTRE RAMAS**
+> __NOTA:__ Para unir RAMAS, es necesario estar en la rama principal, en este caso se va unir la ramas master
+
+ITEM|COMMAND | DESCRIPCION
+----|--------|----------------------------
+1   | git checkout [master] | Ingrar a la rama [master]
+2   | git merge [Rama-Seccion1-Clase10] | Agregar la rama [Rama-Seccion1-Clase10] a la Rama  [master]
 
 
-
-Merge - Uniones
-fast-forward | cuando no hay cambios en la rama principal
-fast-forward | uniones automaticas
-fast-forward | uniones manual
 
 ### TAG
 COMMAND | DESCRIPCION
 --------|----------------------------
 git tag | Ver los tag creado
-git tag -d superRelease | Eliminar Tag
 git tag -a v1.0.0 -m "Version 1.0.0" | Crear un tag de forma mas detallada
+git tag -d `nombre del tag` | Eliminar Tag
 git tag -a v0.1.0 345d7de -m "version alfa" | Crear un tag en una version en base a un codigo hash
 git show v1.0.0 | Ver informacion detalla del tag
 git push --tags | sube todo los Tag a GitHub
