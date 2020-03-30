@@ -55,7 +55,7 @@ function login(req, res) {
 //=================================================================
 
 function getAll(req, res) {
-    usuarios.all()
+    usuarios.findAll()
         .then(usuarios => {
             res.status(200).send({ usuarios });
         })
