@@ -39,7 +39,39 @@ function update(req, res) {
         });
 }
 
+
+//=================================================================
+// SUBIR FOTOGRAFIA 
+//=================================================================
+
+function uploadFotografia(req, res) {
+    var id = req.params.id;
+
+    if (req.files) {
+        var file_path = req.files.foto.path;
+        var file_split = file_path.split('\\');
+        console.log(file_split);
+
+        var file_name = file_split[3];
+        console.log(file_name);
+
+        var ext_split = file_name.split('\.'); //separa el nombre del archivo y extension
+        console.log(ext_split);
+
+        var file_ext = ext_split[1]; //Guardamos la extension
+
+        if (file_ext == 'jpg') {
+
+        }
+
+    } else {
+        res.status(400).send({ message: "Debe seleccionar una fotografía." });
+    }
+}
+
+
 module.exports = {
     create,
     update,
+    uploadFotografia,
 }

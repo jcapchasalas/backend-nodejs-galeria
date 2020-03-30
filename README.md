@@ -32,6 +32,7 @@ INSTALACION DE DEPENDENCIAS O LIBRERIA DE TERCEROS
 | npm install mysql2 --save | Conexion a la Base de datos MySQL |
 | sequelize init | Ejecutar en la carpeta `server`  |
 | npm install njwt --save | Libreria que crea los token | SECCION 1: CLASE 06 |
+| npm install connect-multiparty --save | Libreria ayuda a subir un archivo | SECCION 1: CLASE 10 |
 
 
 <!------------VISUAL ESTUDIO CODE---------------------
@@ -100,7 +101,19 @@ COMMAND | DESCRIPCION
 git clone `[URL]` | Clonar un repositiorio
 git clone `[URL]` `[nombre]` | Clonar repositorio y colocar nombre propio 
 
+### RAMAS UNIONES CONFLICTOS 
+COMMAND | DESCRIPCION
+--------|----------------------------
+git branch [Rama-Seccion1-Clase10] | Crear una nueva rama
+git branch | ver las ramas creadas `marcado en verde es la rama que estamos trabajando`
+git checkout [Rama-Seccion1-Clase10] | Mover de rama
 
+
+
+Merge - Uniones
+fast-forward | cuando no hay cambios en la rama principal
+fast-forward | uniones automaticas
+fast-forward | uniones manual
 
 ### TAG
 COMMAND | DESCRIPCION
