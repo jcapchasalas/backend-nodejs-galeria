@@ -120,12 +120,32 @@ function uploadFotografia(req, res) {
 }
 
 //=================================================================
-// INSERT NEW COMMENT 
+// OBTENER FOTOGRAFIA 
 //=================================================================
+
+function getFotografia(req, res) {
+    var fotografia = req.params.fotografia;
+    var thumb = req.params.thumb; // para saber que fotografia extraer (original o thumb)
+
+    if (thumb == "false")
+        var path_foto = './server/uploads/fotografias/' + fotografia;
+    else if (thumb == "true")
+        var path_foto = './server/uploads/fotografias/thumbs/' + fotografia;
+
+    fs.exists(path_foto, (exists) => {
+        if (exists) {
+            res.sendFile(path.resolve(path_foto));
+        } else {
+            res.status(404).send({ message: "No se encuentra la fotografía." });
+        }
+    })
+}
+
 
 
 module.exports = {
     create,
     update,
     uploadFotografia,
+    getFotografia,
 }
