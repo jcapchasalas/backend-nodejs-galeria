@@ -101,6 +101,7 @@ COMMAND | DESCRIPCION
 git clone `[URL]` | Clonar un repositiorio
 git clone `[URL]` `[nombre]` | Clonar repositorio y colocar nombre propio 
 
+
 ### RAMAS - UNIONES - CONFLICTOS 
 ITEM|COMMAND | DESCRIPCION
 ----|--------|----------------------------
