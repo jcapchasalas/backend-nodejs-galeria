@@ -33,7 +33,7 @@ INSTALACION DE DEPENDENCIAS O LIBRERIA DE TERCEROS
 | sequelize init | Ejecutar en la carpeta `server`  |
 | npm install njwt --save | Libreria que crea los token | SECCION 1: CLASE 06 |
 | npm install connect-multiparty --save | Libreria ayuda a subir un archivo | SECCION 1: CLASE 10 |
-
+| npm install node-thumbnail --save | Libreria cambia el tamaño de la imagen  | SECCION 1: CLASE 10 (32min) |
 
 <!------------VISUAL ESTUDIO CODE---------------------
 ----------------------------------------------------->
@@ -198,19 +198,3 @@ VIÑETAS
 URL
 [zeit/ms](https://github.com/zeit/ms). 
 
-CREAR TABLA
-alg Parameter Value | Digital Signature or MAC Algorithm
-----------------|----------------------------
-HS256 | HMAC using SHA-256 hash algorithm
-HS384 | HMAC using SHA-384 hash algorithm
-HS512 | HMAC using SHA-512 hash algorithm
-RS256 | RSASSA-PKCS1-v1_5 using SHA-256 hash algorithm
-RS384 | RSASSA-PKCS1-v1_5 using SHA-384 hash algorithm
-RS512 | RSASSA-PKCS1-v1_5 using SHA-512 hash algorithm
-PS256 | RSASSA-PSS using SHA-256 hash algorithm (only node ^6.12.0 OR >=8.0.0)
-PS384 | RSASSA-PSS using SHA-384 hash algorithm (only node ^6.12.0 OR >=8.0.0)
-PS512 | RSASSA-PSS using SHA-512 hash algorithm (only node ^6.12.0 OR >=8.0.0)
-ES256 | ECDSA using P-256 curve and SHA-256 hash algorithm
-ES384 | ECDSA using P-384 curve and SHA-384 hash algorithm
-ES512 | ECDSA using P-521 curve and SHA-512 hash algorithm
-none | No digital signature or MAC value included
