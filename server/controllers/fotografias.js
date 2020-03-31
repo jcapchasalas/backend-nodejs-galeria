@@ -141,6 +141,60 @@ function getFotografia(req, res) {
     })
 }
 
+//=================================================================
+// LISTAR FOTOGRAFIA 
+//=================================================================
+
+function getAll(req, res) {
+    fotografias.findAll({
+            where: {
+                activo: true
+            },
+            order: [
+                ['numero', 'ASC']
+            ]
+        })
+        .then(fotografias => {
+            res.status(200).send({ fotografias });
+        })
+        .catch(err => {
+            res.status(500).send({ message: "Ocurrió un error al buscar las fotografías." });
+        })
+}
+
+//=================================================================
+// LISTAR FOTOGRAFIAS - TRUE AND FALSE 
+//=================================================================
+
+function getAllAdmin(req, res) {
+    fotografias.findAll({
+            order: [
+                ['numero', 'ASC']
+            ]
+        })
+        .then(fotografias => {
+            res.status(200).send({ fotografias });
+        })
+        .catch(err => {
+            res.status(500).send({ message: "Ocurrió un error al buscar las fotografías." });
+        })
+}
+
+//=================================================================
+// INSERT NEW COMMENT 
+//=================================================================
+
+function getById(req, res) {
+    var id = req.params.id;
+
+    fotografias.findById(id)
+        .then(fotografia => {
+            res.status(200).send({ fotografia });
+        })
+        .catch(err => {
+            res.status(500).send({ message: "Ocurrió un error al buscar una fotografía." });
+        })
+}
 
 
 module.exports = {
@@ -148,4 +202,7 @@ module.exports = {
     update,
     uploadFotografia,
     getFotografia,
+    getAll,
+    getAllAdmin,
+    getById,
 }
