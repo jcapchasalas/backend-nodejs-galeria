@@ -35,16 +35,6 @@ INSTALACION DE DEPENDENCIAS O LIBRERIA DE TERCEROS
 | npm install connect-multiparty --save | Libreria ayuda a subir un archivo | SECCION 1: CLASE 10 |
 | npm install node-thumbnail --save | Libreria cambia el tamaño de la imagen  | SECCION 1: CLASE 10 (32min) |
 
-<!------------VISUAL ESTUDIO CODE---------------------
------------------------------------------------------>
-
-INSTALL EXTENSIONES EN VISUAL STUDIO  CODE
-------------------------------------------------------
-
-COMMAND | DESCRIPCION
-----------------|----------------------------
-
-
 
 <!------------COMAND GIT------------------------------
 ----------------------------------------------------->
@@ -153,49 +143,3 @@ COMMAND | DESCRIPCION
 --------|----------------------------
 | git reflog  | Lo va revertir a un determinado punto en nuestra histi¿oria  |
 | git reset --hard 8d5cada  | falta  |
-
-
-
-
-
-
-
-
-
-
-
-
-<!----EJEMPLOS----->
-
-
-
-
-
-
-
-
-
-
-
-
-### EJEMPLO
-
-CREAR UN ADVETENCIA O SUGERENCIA
-> __Warning:__ When the token comes from an untrusted source (e.g. user input or external requests), the returned decoded payload should be treated like any other user input; please make sure to sanitize and only work with properties that are expected
-
-RESALTAR PALABRA O FRASE
-`token` is the JsonWebToken string
-
-NEGRITA Y CURSIVA
-> **Please _note_ that** `exp` or any other claim is only set if the payload is an object literal. Buffer or string payloads are not checked for JSON validity.
-
-VIÑETAS
-* `json`: force JSON.parse on the payload even if the header doesn't contain `"typ":"JWT"`.
-* **complete**: return an object with the decoded payload and header.
-
-* `expiresIn`: expressed in seconds or a string describing a time span.
-  > Eg: `60`, `"2 days"`, `"10h"`, `"7d"`. A numeric value is interpreted as a seconds count. If you use a string be sure you provide the time units (days, hours, etc), otherwise milliseconds unit is used by default (`"120"` is equal to `"120ms"`).
-
-URL
-[zeit/ms](https://github.com/zeit/ms). 
-
